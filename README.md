@@ -20,11 +20,3 @@ etc.
 ## Built With
 
 * [p5.js](https://p5js.org/) - The Javascript library used
-
-## Authors
-
-* **Noah Vawter** - *Initial work* - [Daniel Shiffman](https://gist.github.com/shiffman)
-
-## Acknowledgments
-
-* Hat tip to Daniel Shiffman for inspiring this.
