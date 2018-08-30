@@ -15,11 +15,10 @@ function draw(){
 	strokeWeight(4);
 	fill(255);
 	
-	if(random(1) < 0.5){
-	line(x, y, x + space, y + space);
-	}else{
-		line(x + space, y, x, y + space);
-	}
+	if(random(1) < 0.5)
+	   line(x, y, x + space, y + space);
+	else
+	   line(x + space, y, x, y + space);
 
 	x+= space;
 
