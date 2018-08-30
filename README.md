@@ -20,3 +20,7 @@ etc.
 ## Built With
 
 * [p5.js](https://p5js.org/) - The Javascript library used
+
+## Acknowledgments
+
+* Hat tip to Daniel Shiffman for inspiring this.
