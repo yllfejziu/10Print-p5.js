@@ -1,3 +1,5 @@
+let space = 30;
+let sleepVar;
 let r;
 let g;
 let b;
@@ -18,7 +20,7 @@ function draw(){
 	stroke(r,g,b);
 	strokeWeight(7);
 	fill(255);
-	
+
 	if(random(1) < 0.5){
 		line(x, y, x + space, y + space);
 	}else{
@@ -40,7 +42,7 @@ function draw(){
 		g -= random(30);
 		b -= random(30);
 	}
-	if(y >= height){
-		setTimeout(setup, 1000);
+	if(y >= height + 100){
+		setup();
 	}
 }
