@@ -1,16 +1,17 @@
-let space = 30;
 let r;
 let g;
 let b;
-let x = 0;
-let y = 0;
+let x;
+let y;
 
 function setup(){
 	createCanvas(windowWidth, windowHeight);
 	background(0);
-	r = random(255);
-	g = random(255);
-	b = random(255);
+	r = random(100,255);
+	g = random(100,255);
+	b = random(100,255);
+	x = 0;
+	y = 0;
 }
 
 function draw(){
@@ -29,20 +30,17 @@ function draw(){
 	if(y >= height / 2 && x >= width){
 		x = 0;
 		y += space;
-		r -= random(30);
+		r += random(30);
 		b += random(30);
 		g += random(30);
 	}else if(x >= width){
 		x = 0;
 		y += space;
-		r += random(30);
+		r -= random(30);
 		g -= random(30);
 		b -= random(30);
 	}
 	if(y >= height){
-		background(0);
-		x=0;
-		y=0;
+		setTimeout(setup, 1000);
 	}
-
 }
