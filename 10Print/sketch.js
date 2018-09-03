@@ -26,14 +26,13 @@ function draw(){
 
 	x+= space;
 
-	if(y >= windowHeight / 2 && x >= windowWidth){
+	if(y >= height / 2 && x >= width){
 		x = 0;
 		y += space;
 		r -= random(30);
 		b += random(30);
 		g += random(30);
-		console.log(true);
-	}else if(x >= windowWidth){
+	}else if(x >= width){
 		x = 0;
 		y += space;
 		r += random(30);
@@ -45,4 +44,5 @@ function draw(){
 		x=0;
 		y=0;
 	}
+
 }
